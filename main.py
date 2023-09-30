@@ -13,6 +13,7 @@ driver.get("https://rahulshettyacademy.com/angularpractice/")
 dropdown = Select(driver.find_element(By.ID,"exampleFormControlSelect1"))
 dropdown.select_by_index(1)
 dropdown.select_by_visible_text("Female")
+time.sleep(2)
 dropdown.select_by_index(0)
 #dropdown.select_by_value()
 
@@ -28,7 +29,9 @@ for country in countries:
         country.click()
 time.sleep(2)
 
-
+#print(driver.find_element(By.ID,"autosuggest").text)
+print(driver.find_element(By.ID,"autosuggest").get_attribute("value"))
+assert driver.find_element(By.ID,"autosuggest").get_attribute("value")=="India"
 
 
 
