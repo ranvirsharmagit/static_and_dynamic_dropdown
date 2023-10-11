@@ -12,7 +12,7 @@ driver.implicitly_wait(9)
  #apply time wait to all driver step
 driver.get("https://rahulshettyacademy.com/seleniumPractise/#/")
 driver.find_element(By.CSS_SELECTOR,".search-keyword").send_keys("ber")
-time.sleep(2)
+time.sleep(2) #use time lapse here because there "find.elements we use insted find.element"
 results = driver.find_elements(By.XPATH,"//div[@class='products']/div")
 count = len(results)
 assert count > 0
