@@ -8,7 +8,6 @@ from selenium.webdriver.support import select
 from selenium.webdriver.support.select import Select
 
 
-
 driver = webdriver.Chrome()
 driver.maximize_window() #for maximize the window
 driver.implicitly_wait(5)
