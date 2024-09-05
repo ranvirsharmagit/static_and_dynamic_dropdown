@@ -13,5 +13,6 @@ driver.maximize_window() #for maximize the window
 driver.implicitly_wait(5)
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 driver.execute_script("window.scrollBy(0,document.body.scrollHeight);") #executive_script method use to excute java script
-#driver.get_screenshot_as_file("screenimage.png")
+time.sleep(5)
+driver.get_screenshot_as_file("screenimage.png")
 

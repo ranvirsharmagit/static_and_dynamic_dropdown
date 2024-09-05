@@ -17,5 +17,3 @@ for checkbox in checkboxes:
         checkbox.is_selected()
 
 time.sleep(2)
-
-p
