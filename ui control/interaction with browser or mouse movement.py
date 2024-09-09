@@ -16,4 +16,4 @@ action = ActionChains(driver) #use for many purpose like hover and many more
 action.move_to_element(driver.find_element(By.ID,"mousehover")).perform()
 #action.context_click(driver.find_element(By.LINK_TEXT,"Top")).perform() use for right click on element
 time.sleep(4)
-action.move_to_element(driver.find_element(By.LINK_TEXT,"Reload")).click()
+action.move_to_element(driver.find_element(By.LINK_TEXT,"Reload")).click().perform()
