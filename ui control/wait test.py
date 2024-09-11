@@ -31,4 +31,4 @@ wait = WebDriverWait(driver,10)
 wait.until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR,".promoinfo")))
 print(driver.find_element(By.CSS_SELECTOR,".promoinfo").text);
 
-
+#wait.until(expected_conditions.presence_of_all_elements_located(By.ID,"promoinfo"))

@@ -21,10 +21,10 @@ dropdown.select_by_index(0)
 driver.get("https://rahulshettyacademy.com/dropdownsPractise/")
 driver.find_element(By.ID,"autosuggest").send_keys("ind")
 time.sleep(2)
-countries = driver.find_elements(By.CSS_SELECTOR,"li[class='ui-menu-item'] a")
-print(len(countries))
+countries = driver.find_elements(By.CSS_SELECTOR,"li[class='ui-menu-item'] a") #list of countries check here
+print(len(countries)) #to count countries available in list
 
-for country in countries:
+for country in countries: #by this we select a country for field
     if country.text == "India":
         country.click()
 time.sleep(2)

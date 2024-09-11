@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome import service
 from selenium.webdriver.common import alert
-from selenium.webdriver.common.
+from selenium.webdriver.common.by import By
 name="ranvir"
 from selenium.webdriver.support import select
 from selenium.webdriver.support.select import Select
@@ -17,5 +17,5 @@ alert = driver.switch_to.alert   #chapter -handling java script  alert box
 alerttext = alert.text
 print(alerttext)
 assert name in alerttext
-alert.accept()
+alert.accept()  #to click ok on alertbox
 time.sleep(3)
